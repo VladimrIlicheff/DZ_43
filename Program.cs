@@ -24,6 +24,8 @@ double numFour = double.Parse(Console.ReadLine()!);
     {
         double axisX = (numSekond - numFirst) / (numThird - numFour);
         double axisY = (numThird * axisX) + numFirst;
+        axisX=Math.Round(axisX,2);
+        axisY=Math.Round(axisY,2);
         Console.WriteLine($"координата Х {axisX}, координата Y {axisY}");
     }
 }
