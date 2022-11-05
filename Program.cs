@@ -4,10 +4,13 @@
 b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)*/
 
 Console.WriteLine ("Введите значение b1");
-int numFirst = int.Parse(Console.ReadLine()!);
-Console.WriteLine ("Введите значение b1");
-int numSekond = int.Parse(Console.ReadLine()!);
-Console.WriteLine ("Введите значение b1");
-int numThird= int.Parse(Console.ReadLine()!);
-Console.WriteLine ("Введите значение b1");
-int numFour= int.Parse(Console.ReadLine()!);
+double numFirst = double.Parse(Console.ReadLine()!);
+Console.WriteLine ("Введите значение b2");
+double numSekond = double.Parse(Console.ReadLine()!);
+Console.WriteLine ("Введите значение k1");
+double numThird= double.Parse(Console.ReadLine()!);
+Console.WriteLine ("Введите значение k2");
+double numFour= double.Parse(Console.ReadLine()!);
+double axisX = (numSekond-numFirst)/(numThird-numFour);
+double axisY = (numThird * axisX)+numFirst;
+Console.WriteLine ($"координата Х {axisX}, координата Y {axisY}");
